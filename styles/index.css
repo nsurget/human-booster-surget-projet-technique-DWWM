@@ -1,0 +1,589 @@
+
+:root{                          /* Stockage des couleurs principales du site afin de les modifier si nécessaire. */
+    --couleur-principale: #7e1625;      /* var(--couleur-principale) */
+    --couleur-secondaire: #191819;      /* var(--couleur-secondaire) */
+    --couleur-tertiaire: #ededed;       /* var(--couleur-tertiaire) */
+    --couleur-dark: black;              /* var(--couleur-dark) */
+    --couleur-white: white;             /* var(--couleur-white) */
+    --couleur-grey: #474647;            /* var(--couleur-grey) */
+    --couleur-light-grey: #b2b3b3;      /* var(--couleur-light-grey) */
+}
+
+.container{                 /* J'ai regroupé tous les éléments du site dans un conteneur pour centrer le contenu et lui appliquer des marges (padding). */
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 77.5em;          /* Avec une largeur fixe et un conteneur, le site n'est pas responsive, mais ne se déforme pas lors d'un zoom ou d'un changement de dimension de fenêtre. */
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{         /* h1 est utilisé dans Titre du carousel, TABLE DE STATS et TOUR DE FRANCE */
+    margin-top: 16px;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 3.1em;
+    color: var(--couleur-white);
+    fill: var(--couleur-white);
+}
+
+h4{      /* Titre bordeaux des sections */
+    margin: 0;
+    font-family: Work Sans;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: var(--couleur-principale);
+}
+
+h2 {     /* Titre gris des sections */
+    margin: 0;
+    font-family: Poppins;
+    line-height: 1.2em;
+    font-weight: 400;
+    font-size: 2.7em;
+    color: var(--couleur-grey);
+}
+
+h5{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: var(--couleur-dark);
+    margin-bottom: 20px;
+}
+
+h6{
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--couleur-white);
+    margin: 0;
+}
+
+
+p{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: var(--couleur-grey);
+}
+
+
+
+/* ============= LE RASSEMBLEMENT AUVERGNAT ============= */
+
+.rassemblement-auvergnat{      
+    margin-top: 70px;           /* Pour chaque section, j'ai attribué un nom au conteneur et ajusté la marge supérieure entre eux. */
+    display: flex;
+}
+
+.img-rassemblement-1{
+    height: 481px;
+    width: 440px;
+    object-fit: cover; 
+}
+
+
+
+.img-rassemblement-2{
+    height: 481px;
+    width: 316px;
+    object-fit: cover; 
+}
+
+.title-txt-rassemblement{
+    height: 450px;
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-top: 30px;
+   
+}
+ 
+
+
+/* ============= TABLE DE STATS ============= */
+
+.table-stats{
+    margin-top: 106px;
+    position: relative;
+}
+
+
+.image-background{
+    position: absolute;
+    height: 345px;
+    width: 77.5em;
+    object-fit: cover;            /* pour éviter la déformation */
+    filter: brightness(19%);      /* pour assombrir l'image */
+    z-index: -2;
+}
+
+.table-stats .stats{
+    height: 345px;
+    width: 77.5em;
+    display: flex;
+    z-index: 1;
+}
+
+.stats .stat{
+    margin: 15px;
+    margin-top: 60px;
+}
+
+.logo-nbr{
+    display: flex;
+    align-items: center;
+}
+
+.logo-nbr img{
+    margin-top: 19px;
+    margin-right: 10px;
+    width: 50px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.logo-nbr h1{
+    color: var(--couleur-principale);
+    font-weight: 600;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+.border-hash-right{
+    border-right: dashed 1px rgba(255, 255, 255, 0.192);
+    height: 250px;
+}
+
+.stat p{
+    margin-right: 15px;
+    color: var(--couleur-white);
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.table-stats .exposant{ 
+    margin-bottom: 10px;
+    vertical-align : super; 
+    font-size: 1.9em;
+    font-family: Poppins;
+    color: var(--couleur-principale);
+    font-weight: 600;
+}
+
+
+
+/* ============= TOUR DE FRANCE ============= */
+
+.tour-de-france{
+    margin-top: 75px;
+}
+
+.tour-de-france-img{
+    height: 454px;
+}
+
+.tour-de-france-content{
+    margin-top: 46px;
+    display: flex;
+}
+
+.tour-de-france-texte{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+.tour-de-france h1{
+    color: var(--couleur-principale);
+    font-weight: 600;
+    font-size: 4em;
+    float: left;
+    margin: 0px;
+    margin-right: 6px;
+    line-height: 0.9em;
+}
+
+.tour-de-france .second-btn{
+    margin-top: 30px;
+}
+
+.tour-de-france h5{
+    margin-top: 0;
+}
+
+
+
+
+/* ============= LE BLOG ============= */
+
+.le-blog{
+    margin-top: 56px;
+}
+
+.center-btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ============= NEWSLETTER ============= */
+
+.newsletter{
+    margin-top: 80px;
+    position: relative;
+}
+
+.newsletter img{
+    filter: brightness(35%)
+}
+
+.newsletter-content{
+    width: 77.5em;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.newsletter-content h4 {
+    margin-top: 40px;
+    color: var(--couleur-light-grey);
+    
+}
+
+.newsletter-content h2 {
+    color: var(--couleur-white);
+}
+
+.newsletter-content .separation{
+    width: 180px;
+    filter: brightness(1.3);
+}
+
+.newsletter .email{
+ margin-top: 20px;   
+}
+
+.newsletter h5{
+        margin: 0;
+        margin-top: 8px;
+        font-weight: 600;
+        font-size: 0.75em; 
+        letter-spacing: 0.7px;
+        color: var(--couleur-white);
+}
+
+.newsletter .saisie-button{
+    margin-top: 9px;
+    display: flex;
+}
+
+.newsletter .email-input{
+    margin: 0;
+    padding: 16px;
+    padding-left: 24px;
+    width: 245px;
+    border-radius: 30px 0 0 30px;
+    border: none;
+    outline: none;
+}
+
+.newsletter .checkbox{
+    display: flex;
+    
+}
+
+.newsletter .checkbox input[type=checkbox]{
+    -webkit-appearance: none;
+    border: 1px solid var(--couleur-light-grey);
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    display: grid;
+    place-content: center;
+}
+  
+input[type="checkbox"]:checked {
+    background: var(--couleur-tertiaire);
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+
+.newsletter .checkbox p{
+    font-weight: 300;
+    font-size: 0.75em; 
+    line-height: 1.4em;
+    color: var(--couleur-light-grey);
+    width: 380px;
+}
+
+.newsletter .checkbox a{
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--couleur-light-grey);
+}
+
+.newsletter .checkbox a:hover{
+    color: #be7f7f;
+}
+
+
+
+/* ============= INFO-PRATIQUES ============= */
+
+.info-pratiques{
+    margin-top: 90px;
+    display: flex;
+    position: relative;
+}
+
+.img-info-pratiques-1{
+    width: 568px;
+    height: 538px;
+}
+
+.txt-info-pratiques{
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 320px;
+}
+
+.img-info-pratiques-2{
+    position: absolute;
+    top: -50px;
+    right: 100px;
+    width: 241px;
+    height: 214px;
+}
+
+.billet {
+    margin-left: 60px;
+    height: 252px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.billet-type {
+    width: 440px;
+    border-top: 1px dashed var(--couleur-light-grey);
+    padding: 10px;
+    
+}
+
+.billet-dernier{
+  border-bottom: 1px dashed var(--couleur-light-grey);
+}
+
+.billet-prix {
+    width: 127px;
+    border-top: 1px dashed var(--couleur-light-grey);
+    border-left: 1px dashed var(--couleur-light-grey);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: var(--couleur-principale);
+}
+
+.billet h5{
+    margin: 0;
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 0.9em; 
+}
+
+.billet p{
+    margin: 0;
+    margin-top: 7px;
+    font-size: 0.8em;
+    display: inline;
+}
+
+.billet .clause{
+    display: inline;
+    font-size: 0.7em;
+}
+
+.txt-img-billet .btn{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+
+
+/* ============= MAP ============= */
+
+.map{
+    margin-top: 77px;
+   position: relative;
+}
+
+.map iframe{
+    border: 0;
+    width: 85%;
+    height: 476px;
+}
+
+
+
+.info-localisation{
+    position: absolute;
+    top: 0;
+    right: 100px;
+    margin-top: 60px;
+    background-color: var(--couleur-secondaire);
+    height: 460px;
+    width: 462px;
+}
+
+.info-localisation-texte{
+    margin-top: 45px;
+    margin-left: 52px;
+}
+
+.info-localisation h4 {
+    color: var(--couleur-light-grey);
+}
+
+
+.info-localisation h2 {
+    color: var(--couleur-white);
+}
+
+
+
+
+.info-localisation .separation{
+    width: 155px;
+}
+
+.info-localisation h5{
+    color: var(--couleur-white);
+    font-weight: 300;
+    font-size: 1.1em;
+    display: flex;
+    line-height: 1.2em;
+    margin-top: 24px;
+}
+
+.info-localisation a:hover h5{
+    color: var(--couleur-light-grey);
+}
+
+.info-localisation svg{
+    margin-right: 10px;
+    fill: var(--couleur-principale);
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+.info-localisation p {
+    color: var(--couleur-white);
+    font-weight: 200;
+    margin:0;
+    margin-top: 2px;
+}
+
+.info-localisation b{
+    font-weight: 400;
+}
+
+.info-localisation .btn{
+    margin-top: 28px;
+}
+
+
+
+/* ============= BOUTON SCROLL TOP  ============= */
+
+.btn-scroll-top{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--couleur-tertiaire);
+    border: 1px solid var(--couleur-principale);
+    fill: var(--couleur-principale);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+}
+
+.btn-scroll-top:hover{
+    fill: var(--couleur-tertiaire);
+    background-color: var(--couleur-principale);
+    transition: 0.8s ease;
+}
+
+.svg-scroll-top-button{
+    width: 15px;
+    height: 15px;
+}
+
+
+
+/* ============= FOOTER ============= */
+
+footer{
+    margin-top: 109px;
+    width: 100%;
+    height: 48px;
+    background-color: var(--couleur-principale);
+}
+
+.footer-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-link{
+    color: var(--couleur-white);
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: Work Sans;
+    font-weight: 500;
+    font-size: 0.7em;
+    border-right: 1px solid var(--couleur-tertiaire);
+}
+
+.footer-link:hover{
+    color: var(--couleur-light-grey);
+    
+}
+.footer-left .footer-link:last-child{
+    border-right: none;
+}
+
+.credit{
+    font-family: Poppins;
+    color: var(--couleur-tertiaire);
+    font-weight: 300;
+    font-size: 0.7em;
+}

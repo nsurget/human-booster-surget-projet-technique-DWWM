@@ -1,0 +1,243 @@
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-hb-home svg{
+    margin-top: 1.875em;
+    fill:var(--couleur-principale);
+    width: 11.813em;
+    height: 1.438em;
+}
+
+.logo-hb-home:hover svg{
+    fill: var(--couleur-black);
+    transition: fill 1s ease;
+}
+
+
+
+.nav-link-container{
+    margin-left: auto;
+}
+
+.grey-gradiant{
+    background: linear-gradient(to right,rgba(0, 0, 255, 0), var(--couleur-tertiaire));
+    height: 2.313em;
+    width: 51.25em;
+}
+
+.grey-border-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: calc(50% - 24em);
+    height: 2.313em;
+    background-color: var(--couleur-tertiaire);
+}
+
+.social-link-container{
+    display: flex;
+    flex-direction: row;
+    height: 2.313em;
+    align-items: center;
+}
+
+.social-link{
+
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 0.7em;
+    text-decoration: none;
+    color: var(--couleur-black);
+    transition: color 0.3s ease;
+}
+
+
+
+.social-link:hover{
+    color: var(--couleur-principale);
+}
+
+.blog-link{
+    padding-right: 20px;
+    border-right: 1px solid var(--couleur-tertiaire);
+    
+}
+
+.contact-link{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.social-svg-link{
+    background-color: var(--couleur-principale);
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    height: 22px;
+    width: 22px;
+    padding: 2px;
+    transition: 0.8s ease;
+}
+
+.social-svg-link:hover{
+    background-color: var(--couleur-secondaire)
+    
+}
+
+.social-svg-link .svg-nav-logo{
+    fill:var(--couleur-white);
+}
+
+.facebook-svg-link{
+    padding-left: 6px;
+}
+
+.instagram-svg-link{
+    margin-left: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.website-link-container .svg-nav-logo{
+    height: 0.75em;
+    width: 0.75em;
+}
+
+
+
+.website-link-container{
+    display: flex;
+    margin-top: 10px;
+    justify-content: end;
+}
+
+.website-link-container .svg-nav-logo {
+    fill:var(--couleur-principale);
+    margin-left: 2px;
+}
+
+.bouton-link {
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-left: 3.125em;
+    text-decoration: none;
+    color: var(--couleur-black);
+    transition: color 0.3s ease;
+}
+
+.bouton-link:hover {
+    color: var(--couleur-principale);
+    transition: color 0.3s ease;
+}
+
+
+.menu-1, .menu-2 {
+    position: relative;
+}
+
+.sousmenu-1 {
+    z-index: 4;
+    position: absolute;
+    top: 1.3em;
+    right: calc(50% - 125px);
+    list-style: none;
+    margin-top: 0px;
+    padding-left: 0px;
+    width: 250px;
+    text-align: center;
+    display: none;
+}
+
+.sousmenu-2 {
+    z-index: 4;
+    position: absolute;
+    top: 1.3em;
+    right: calc(50% - 125px);
+    list-style: none;
+    margin-top: 0px;
+    padding-left: 0px;
+    width: 250px;
+    text-align: center;
+    display: none;
+}
+
+
+.menu-1 a:link, .menu-1 a:visited {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-2 a:link, .menu-2 a:visited {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sousmenu-1 li a:link, .menu-1 li a:visited {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    border:1px solid var(--couleur-tertiaire);
+    background-color: var(--couleur-white);
+}
+
+.sousmenu-2 li a:link, .menu-2 li a:visited {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    border:1px solid var(--couleur-tertiaire);
+    background-color: var(--couleur-white);
+}
+
+.sousmenu-1 li a:hover, .sousmenu-2 li a:hover{
+    border:1px solid var(--couleur-principale);
+    transition: border 0.7s ease;
+}
+
+.menu-1:hover .sousmenu-1 {
+    display: block;
+}
+
+.menu-2:hover .sousmenu-2 {
+    display: block;
+}
+
+
+
+
+.billetterie{
+    position: relative;
+    margin-left: 50px;
+    display: flex;
+}
+
+.billetterie-logo {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    fill: var(--couleur-principale);
+    transition: fill 0.3s ease;
+}
+
+.billetterie-link{
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-left: 0;
+    text-decoration: none;
+    color: var(--couleur-principale);
+    transition: color 0.3s ease;
+}
+
+.billetterie:hover .billetterie-logo,
+.billetterie:hover .billetterie-link{
+    fill: orange; /* Appliquer la couleur noire à un élément non textuel comme un logo SVG */
+    color: orange; /* Appliquer la couleur noire à un élément textuel comme un lien (ajustez si nécessaire) */
+}

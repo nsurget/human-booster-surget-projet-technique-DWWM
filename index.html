@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Humain Booster - Salon du vin</title>
+    <link rel="icon" href="https://humanbooster.com/wp-content/uploads/2021/04/cropped-Sans-titre-32x32.png"
+        sizes="32x32">
+
+    <!-- Import des css -->
+    <link href="styles/index.css" rel="stylesheet">
+    <!-- la navbar a un css individuel pour simplifier la réutilisation sur d'autres pages -->
+    <link href="styles/navbar.css" rel="stylesheet">
+    <!-- Tous les class .btn* -->
+    <link href="styles/button.css" rel="stylesheet">
+    <!-- carousel(Premiere section) et card-slider(section BLOG) ont un css et js individuels pour simplifier la réutilisation sur d'autres pages -->
+    <link href="styles/carousel.css" rel="stylesheet">
+    <link href="styles/card-slider.css" rel="stylesheet">
+
+
+
+    <!-- Import des fonts google (Poppins et Work Sans)  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="https://humanbooster.com/" class="logo-hb-home">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251.156 28.113">
+                    <g id="Group_42165" data-name="Group 42165" transform="translate(-49.578 -258.621)">
+                        <path id="Path_159646" data-name="Path 159646"
+                            d="M66.161,258.622a.994.994,0,0,1,.733.3,1.061,1.061,0,0,1,.3.753v26.013a1.064,1.064,0,0,1-.3.753,1,1,0,0,1-.733.3,1.016,1.016,0,0,1-1.05-1.05V273.719H51.658v11.966a1.066,1.066,0,0,1-.3.753,1.041,1.041,0,0,1-.733.3,1.016,1.016,0,0,1-1.05-1.05V259.672a1.017,1.017,0,0,1,1.05-1.05,1.038,1.038,0,0,1,.733.3,1.063,1.063,0,0,1,.3.753v11.966H65.111V259.672a1.017,1.017,0,0,1,1.05-1.05"
+                            transform="translate(0 -0.001)" shape-rendering="auto"></path>
+                        <path id="Path_159647" data-name="Path 159647"
+                            d="M129.321,300.962a1.016,1.016,0,0,1-1.05,1.05,1,1,0,0,1-.733-.3,1.065,1.065,0,0,1-.3-.753v-2.575a8.73,8.73,0,0,1-13.591.713,9.892,9.892,0,0,1-2.694-6.993V283.23a1.017,1.017,0,0,1,1.05-1.05,1.041,1.041,0,0,1,.733.3,1.063,1.063,0,0,1,.3.753v8.876a7.95,7.95,0,0,0,2.08,5.528,6.616,6.616,0,0,0,10.025,0,8.027,8.027,0,0,0,2.1-5.528V283.23a1.065,1.065,0,0,1,.3-.753,1,1,0,0,1,.733-.3,1.017,1.017,0,0,1,1.05,1.05Z"
+                            transform="translate(-39.802 -15.278)" shape-rendering="auto"></path>
+                        <path id="Path_159648" data-name="Path 159648"
+                            d="M195.46,282.18a7.592,7.592,0,0,1,5.983,2.912,10.467,10.467,0,0,1,2.477,7.013v8.856a1.03,1.03,0,0,1-.317.753,1.053,1.053,0,0,1-1.466,0,1.027,1.027,0,0,1-.317-.753v-8.856a8.532,8.532,0,0,0-1.863-5.547,5.53,5.53,0,0,0-8.975,0,8.471,8.471,0,0,0-1.882,5.547v8.856a1.064,1.064,0,0,1-.3.753,1.053,1.053,0,0,1-1.466,0,1.029,1.029,0,0,1-.317-.753v-8.856a8.531,8.531,0,0,0-1.862-5.547,5.549,5.549,0,0,0-8.995,0,8.5,8.5,0,0,0-1.862,5.528v8.875a1.063,1.063,0,0,1-.3.753,1.038,1.038,0,0,1-.733.3,1.016,1.016,0,0,1-1.05-1.05V283.23a1.017,1.017,0,0,1,1.05-1.05,1.039,1.039,0,0,1,.733.3,1.063,1.063,0,0,1,.3.753v2.358a7.651,7.651,0,0,1,6.36-3.408,7.351,7.351,0,0,1,4.358,1.427,9.456,9.456,0,0,1,3.051,3.724,9.288,9.288,0,0,1,3.031-3.724,7.41,7.41,0,0,1,4.358-1.427"
+                            transform="translate(-79.532 -15.278)"></path>
+                        <path id="Path_159649" data-name="Path 159649"
+                            d="M279.653,282.18a9.943,9.943,0,0,1,9.906,9.926v8.856a1.017,1.017,0,0,1-1.05,1.05,1.038,1.038,0,0,1-.733-.3,1.063,1.063,0,0,1-.3-.753v-8.856a7.846,7.846,0,1,0-2.338,5.567,1.04,1.04,0,0,1,.733-.3,1.017,1.017,0,0,1,1.05,1.05.965.965,0,0,1-.317.733,9.912,9.912,0,1,1-6.954-16.979"
+                            transform="translate(-142.763 -15.278)"></path>
+                        <path id="Path_159650" data-name="Path 159650"
+                            d="M344.336,282.18a8.538,8.538,0,0,1,6.5,2.912,9.966,9.966,0,0,1,2.694,7.013v8.856a1.016,1.016,0,0,1-1.05,1.05.994.994,0,0,1-.733-.3,1.063,1.063,0,0,1-.3-.753v-8.856a7.973,7.973,0,0,0-2.08-5.547,6.636,6.636,0,0,0-10.044,0,7.949,7.949,0,0,0-2.081,5.528v8.875a1.065,1.065,0,0,1-.3.753,1.04,1.04,0,0,1-.733.3,1.016,1.016,0,0,1-1.05-1.05V283.23a1.017,1.017,0,0,1,1.05-1.05,1.041,1.041,0,0,1,.733.3,1.065,1.065,0,0,1,.3.753v2.576a8.559,8.559,0,0,1,7.093-3.626"
+                            transform="translate(-185.198 -15.278)"></path>
+                        <path id="Path_159651" data-name="Path 159651"
+                            d="M406.638,266.336a10.191,10.191,0,1,1-10.209,10.189V260.56a1.965,1.965,0,0,1,1.938-1.938,1.885,1.885,0,0,1,1.381.575,1.853,1.853,0,0,1,.556,1.362v15.966a6.31,6.31,0,1,0,6.333-6.313,6.346,6.346,0,0,0-2.571.537,1.938,1.938,0,1,1-1.555-3.55,10.108,10.108,0,0,1,4.126-.863"
+                            transform="translate(-224.928 -0.001)"></path>
+                        <path id="Path_159652" data-name="Path 159652"
+                            d="M590.433,290.855a6.771,6.771,0,0,1,.019,8.806,6.11,6.11,0,0,1-4.817,2.07h-5.683a1.927,1.927,0,0,1-1.9-1.9,1.848,1.848,0,0,1,.565-1.355,1.787,1.787,0,0,1,1.336-.565h5.683a2.524,2.524,0,0,0,1.976-.771,2.734,2.734,0,0,0,.64-1.863,2.952,2.952,0,0,0-.358-1.43q-.64-1.223-4.422-1.223a5.137,5.137,0,0,1-4.027-1.731,5.663,5.663,0,0,1-.038-7.4,5.157,5.157,0,0,1,4.065-1.75H589a1.9,1.9,0,0,1,1.9,1.9,1.787,1.787,0,0,1-.565,1.336,1.828,1.828,0,0,1-1.336.565h-5.532a1.52,1.52,0,0,0-1.2.47,1.708,1.708,0,0,0-.4,1.167,1.431,1.431,0,0,0,1.6,1.637q5.155,0,6.963,2.032"
+                            transform="translate(-342.707 -14.997)"></path>
+                        <path id="Path_159653" data-name="Path 159653"
+                            d="M631.369,270.532v6.191a6.2,6.2,0,0,0,6.21,6.191,1.928,1.928,0,0,1,1.9,1.9,1.848,1.848,0,0,1-.564,1.355,1.827,1.827,0,0,1-1.336.565,10.023,10.023,0,0,1-10.011-10.011v-16.2a1.826,1.826,0,0,1,.564-1.336,1.786,1.786,0,0,1,1.336-.565,1.895,1.895,0,0,1,1.9,1.9v6.21h6.21a1.895,1.895,0,0,1,1.9,1.9,1.788,1.788,0,0,1-.564,1.336,1.827,1.827,0,0,1-1.336.565Z"
+                            transform="translate(-374.818)"></path>
+                        <path id="Path_159654" data-name="Path 159654"
+                            d="M684.009,288.111v.019a1.9,1.9,0,0,1-1.054,2.465L672.3,294.866a1.9,1.9,0,0,1-.7.132,1.75,1.75,0,0,1-1.769-1.2,1.9,1.9,0,0,1,1.054-2.465l8.637-3.462a6.188,6.188,0,1,0,.019,7.621,1.848,1.848,0,0,1,1.279-.715,1.815,1.815,0,0,1,1.393.4,1.877,1.877,0,0,1,.339,2.672,9.528,9.528,0,0,1-7.885,3.857,10,10,0,1,1,0-20,10.029,10.029,0,0,1,9.333,6.4Z"
+                            transform="translate(-398.875 -14.962)"></path>
+                        <path id="Path_159655" data-name="Path 159655"
+                            d="M739.462,281.844a1.8,1.8,0,0,1,1.223.791,1.82,1.82,0,0,1,.3,1.43,1.887,1.887,0,0,1-.791,1.223,1.82,1.82,0,0,1-1.43.3,4.427,4.427,0,0,0-.9-.094,5.028,5.028,0,0,0-3.895,1.825,6.385,6.385,0,0,0-1.637,4.366v8.11a1.817,1.817,0,0,1-.545,1.336,1.849,1.849,0,0,1-1.355.565,1.928,1.928,0,0,1-1.9-1.9v-16.2a1.928,1.928,0,0,1,1.9-1.9,1.848,1.848,0,0,1,1.355.565,1.817,1.817,0,0,1,.545,1.336v.038a8.724,8.724,0,0,1,5.532-1.938,8.548,8.548,0,0,1,1.6.15"
+                            transform="translate(-440.29 -14.962)"></path>
+                        <path id="Path_159656" data-name="Path 159656"
+                            d="M489.651,281.694a10.189,10.189,0,0,0-7.419,3.346,18.648,18.648,0,0,0-3.837,6.08,15.019,15.019,0,0,1-3.232,5.011,6.817,6.817,0,0,1-4.813,2.154,6.59,6.59,0,1,1,0-13.18c3.521,0,5.864,3.032,7.073,5.151.6-1.487,1.184-2.759,1.647-3.705-1.815-2.4-4.66-4.857-8.719-4.857a10,10,0,1,0,7.194,16.88,18.523,18.523,0,0,0,4.061-6.3,15.374,15.374,0,0,1,3.063-4.845,6.909,6.909,0,0,1,4.983-2.323,6.59,6.59,0,1,1,0,13.18c-3.547,0-5.9-3.079-7.1-5.2-.6,1.494-1.193,2.769-1.654,3.708,1.813,2.419,4.668,4.9,8.754,4.9a10,10,0,1,0,0-20"
+                            transform="translate(-266.378 -14.962)"></path>
+                    </g>
+                </svg>
+            </a>
+            <div class="nav-link-container">
+                <div class="social-link-container">
+                    <div class="grey-gradiant">    <!-- Barre dégradée du gris au transparent  -->
+                    </div>
+                    <div class="social-link-without-background">
+                        <a href="#" class="social-link blog-link">
+                            LE BLOG
+                        </a>
+                        <a href="#" class="social-link contact-link">
+                            CONTACT
+                        </a>
+                        <a href="https://www.facebook.com/HBCOMPETENCES/" class="social-svg-link facebook-svg-link"> <!-- Toutes les icônes proviennent de la bibliothèque gratuite de Font Awesome -->
+                            <svg class="svg-nav-logo" xmlns="http://www.w3.org/2000/svg" height="11px" width="11px"
+                                viewBox="0 0 320 512"> 
+                                <path
+                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/p/C0mJ0XTIwwF/?hl=fr&img_index=1"
+                            class="social-svg-link instagram-svg-link">
+                            <svg class="svg-nav-logo" xmlns="http://www.w3.org/2000/svg" height="11px" width="11px"
+                                viewBox="0 0 448 512"> 
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="website-link-container">
+                    <div class="menu-1">
+                        <a href="#" class="selection-menu-1 bouton-link">
+                            LE SALON
+                            <svg class="svg-nav-logo" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -50 448 512"> 
+                                <path
+                                    d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg>
+
+                        </a>
+                        <ul class="sousmenu-1">                                             <!-- Sous-menu déroulant qui s'affiche lors du survol du lien principal -->
+                            <li><a href="#" class="bouton-link">Sous-menu 1</a></li>        
+                            <li><a href="#" class="bouton-link">Sous-menu 2</a></li>
+                            <li><a href="#" class="bouton-link">Sous-menu 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-2">
+                        <a href="#" class="selection-menu-2 bouton-link">
+                            LISTE DES EXPOSANTS
+                            <svg class="svg-nav-logo" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -50 448 512"> 
+                                <path
+                                    d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg>
+
+                        </a>
+                        <ul class="sousmenu-2">
+                            <li><a href="#" class="bouton-link">Sous-menu 1</a></li>
+                            <li><a href="#" class="bouton-link">Sous-menu 2</a></li>
+                            <li><a href="#" class="bouton-link">Sous-menu 3</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="bouton-link">
+                        ANIMATIONS
+                    </a>
+                    <a href="#" class="bouton-link">
+                        EXPOSER
+                    </a>
+                    <div class="billetterie">
+                        <a href="#">
+                            <svg class="billetterie-logo" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 30 576 512"> 
+                                <path
+                                    d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="billetterie-link">
+                            BILLETTERIE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="grey-border-right">  <!-- La bordure commence à la fin du dégradé, étend le fond de "social-link (LE BLOG - CONTACT - FB - INTA)" et continue jusqu'au bord droit de l'écran -->
+        </div>
+    </header>
+
+
+
+    <!-- CAROUSEL - CSS DU CAROUSEL DANS CAROUSEL.CSS - JS DANS CAROUSEL.JS -->
+
+    <div class="container">
+        <div class="carousel">
+            <div class="black-background"></div>
+            <!-- Utilise un background avec une opacité qui fait la taille de l'image pour l'assombrir -->
+            <button onclick="previous()" class="carousel-btn" id="prev"><svg class="svg-carousel-button"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"> 
+                    <path
+                        d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                </svg>
+            </button>
+            <button onclick="next()" class="carousel-btn" id="next"><svg class="svg-carousel-button"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"> 
+                    <path
+                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                </svg>
+            </button>
+            <ul class="slide-container">
+                <li class="slide active">
+                    <div class="carousel-content">
+                        <div class="topper">
+                            DU 21 <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -70 320 512"> 
+                                <path
+                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                            </svg> AU 25 FÉVRIER 2024
+                        </div>
+                        <h1>
+                            Salon du vin à <br>
+                            Cournon-d'Auvergne
+                        </h1>
+                        <div class="footer">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -19 384 512"> 
+                                <path
+                                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                            </svg>
+                            GRANDE HALLE D'AUVERGNE, COURNON-D'AUVERGNE
+                        </div>
+
+                        <div class="button-container">
+                            <a href="#"><button class="btn btn-border-white">DÉCOUVRIR LE SALON</button></a>  <!-- tout les bouton on une classe btn et peuvent avoir d'autre classe pour les stylisé btn-border btn-white btn-with-logo -->
+                            <a href="#"><button class="btn btn-white btn-with-logo"><span
+                                        class="btn-background-svg btn-svg-red"><svg class="billetterie-logo"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 576 512"> 
+                                            <path
+                                                d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z" />
+                                        </svg></span> ACCÉDER À LA BILLETTERIE</button></a>
+                        </div>
+                    </div>
+                    <img src="./images/carousel-1.jpg" alt="repas à tables vin, miel et fromage">
+                </li>
+                <li class="slide">
+                    <div class="carousel-content">
+                        <div class="topper">
+                            DU 21 <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -70 320 512"> 
+                                <path
+                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                            </svg> AU 25 FÉVRIER 2024
+                        </div>
+                        <h1>
+                            Liste des <br>
+                            Exposants
+                        </h1>
+                        <div class="footer">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -19 384 512"> 
+                                <path
+                                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                            </svg>
+                            de toute la France
+                        </div>
+
+                        <div class="button-container">
+                            <a href="#"><button class="btn btn-border-white">DÉCOUVRIR LA LISTE DES
+                                    EXPOSANTS</button></a>
+                            <a href="#"><button class="btn btn-white btn-with-logo"><span
+                                        class="btn-background-svg btn-svg-red"><svg class="billetterie-logo"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 576 512"> 
+                                            <path
+                                                d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z" />
+                                        </svg></span> ACCÉDER À LA BILLETTERIE</button></a>
+                        </div>
+                    </div>
+                    <img src="./images/carousel-2.jpg" alt="cave à vin sombre">
+                </li>
+                <li class="slide">
+                    <div class="carousel-content">
+                        <div class="topper">
+                            DU 21 <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -70 320 512"> 
+                                <path
+                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                            </svg> AU 25 FÉVRIER 2024
+                        </div>
+                        <h1>
+                            Animations au<br>
+                            Salon du vin !
+                        </h1>
+                        <div class="footer">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512"> 
+                                <path
+                                    d="M32.1 29.3C33.5 12.8 47.4 0 64 0H256c16.6 0 30.5 12.8 31.9 29.3l14 168.4c6 72-42.5 135.2-109.9 150.6V448h48c17.7 0 32 14.3 32 32s-14.3 32-32 32H160 80c-17.7 0-32-14.3-32-32s14.3-32 32-32h48V348.4C60.6 333 12.1 269.8 18.1 197.8l14-168.4zm56 98.7H231.9l-5.3-64H93.4l-5.3 64z" />
+                            </svg>
+                            Explorez des dégustations uniques
+                        </div>
+
+                        <div class="button-container">
+                            <a href="#"><button class="btn btn-border-white">VOIR LES ANIMATIONS PRÉVUES</button></a>
+                            <a href="#"><button class="btn btn-white btn-with-logo"><span
+                                        class="btn-background-svg btn-svg-red"><svg class="billetterie-logo"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 576 512"> 
+                                            <path
+                                                d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z" />
+                                        </svg></span> ACCÉDER À LA BILLETTERIE</button></a>
+                        </div>
+                    </div>
+                    <img src="./images/carousel-3.jpg" alt="vin blanc en été">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/carousel.js"></script>
+
+
+
+    <!-- LE RASSEMBLEMENT AUVERGNAT -->
+
+    <div class="container rassemblement-auvergnat">
+        <img class="img-rassemblement-1" src="./images/LE-RASSEMBLEMENT-AUVERGNAT-1.jpg"
+            alt="Caviste présentant ses bouteilles lors d'un salon">
+        <div class="title-txt-rassemblement">
+            <h4>LE RASSEMBLEMENT AUVERGNAT</h4>
+            <h2>pour les fins palais</h2>
+            <h5>Alors que les prochains millésimes se
+                créent dans le secret des caves, les
+                vignerons en profitent pour venir dans
+                le Massif Central à la rencontre des
+                amateurs d'escapades gourmandes.</h5>
+            <p>Depuis plus d'un quart de siècle, le salon du vin de
+                Clermont-Ferrand représente le rendez-vous de
+                début d'année pour les fins palais. Chaque année,
+                ce sont 35 000 visiteurs qui participent à cet
+                événement d'envergure nationale.</p>
+            <a href="#"><button class="btn">DÉCOUVRIR LE SALON</button></a>
+        </div>
+        <img class="img-rassemblement-2" src="./images/LE-RASSEMBLEMENT-AUVERGNAT-2.jpg"
+            alt="Dame tenant un verre de vin blanc à la main">
+    </div>
+
+
+
+    <!-- TABLE DE STATS -->
+
+    <div class="container table-stats">
+        <img class="image-background" src="./images/table-stats-resin.jpg" alt="Grappe de raisin sur une Vigne">
+        <div class="stats">  <!-- affichage des stats en display : flex-->
+            <div class="stat border-hash-right">
+                <div class="logo-nbr">
+                    <img src="./images/stats-logo-1.png" alt="logo bouteille et grappe">
+                    <h1>35K</h1>
+                </div>
+                <h6>VISITEURS ÉPICURIENS</h6>
+                <p>Chaque année, 35 000 visiteurs
+                    affluent dans les larges allées de la
+                    Grande Halle d'Auvergne. Ce rendez-
+                    vous attire un public désireux de
+                    partager des produits authentiques.</p>
+            </div>
+            <div class="stat border-hash-right">
+                <div class="logo-nbr">
+                    <img src="./images/stats-logo-2.png" alt="logo bouteille et grappe">
+                    <h1>300</h1>
+                </div>
+                <h6>EXPOSANTS DE FRANCE & NAVARRE</h6>
+                <p>En provenance des terroirs
+                    emblématiques de France et de
+                    Navarre, plus de 300 dont
+                    quelques 250 viticulteurs, à
+                    cet événement d'envergure nationale.</p>
+            </div>
+            <div class="stat border-hash-right">
+                <div class="logo-nbr">
+                    <img src="./images/stats-logo-3.png" alt="logo bouteille et grappe">
+                    <h1>3</h1>
+                </div>
+                <h6>PÔLES À PARCOURIR</h6>
+                <p>Les meilleurs producteurs de nos
+                    terroirs sont regroupés selon leurs
+                    « spécialités qui toutes contribuent à
+                    la réputation de savoir vivre de notre
+                    pays.</p>
+            </div>
+            <div class="stat">
+                <div class="logo-nbr">
+                    <img src="./images/stats-logo-4.png" alt="logo bouteille et grappe">
+                    <h1>51</h1><span class="exposant">ème</span>
+                </div>
+                <h6>VISITEURS ÉPICURIENS</h6>
+                <p>Alors, que vous soyez vin ou
+                    gastronomie, peu importe ! Le salon
+                    du vin de Clermont-Ferrand vous
+                    permet d'éveiller tous vos sens et ce,
+                    en toute convivialité !</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- TOUR DE FRANCE -->
+
+    <div class="container tour-de-france">
+        <h4>UN TOUR DE FRANCE</h4>
+        <h2>au coeur des vignobles</h2>
+        <div class="tour-de-france-content">
+            <img class="tour-de-france-img" src="./images/tour-de-france-1.jpg"
+                alt="Monsieur présentant des produits régionaux">
+            <div class="tour-de-france-texte">
+                <h1>R</h1>
+                <h5>endez-vous incontournable en Auvergne,
+                    le salon du vin de Clermont-Ferrand vous
+                    invite à découvrir les produits des régions
+                    viticoles de France et à profiter des
+                    conseils des producteurs.</h5>
+                <p>Le salon met aussi à l'honneur les produits gastronomiques
+                    avec une soixantaine d'exposants proposant des produits
+                    de bouche. Charcuterie, fromage et autres spécialités
+                    locales seront à associer avec vos vins favoris.</p>
+                <a href="#">
+                    <button class="btn btn-white btn-border-principales">LISTE DES EXPOSANTS</button></a>
+                <div class="second-btn">
+                    <a href="#">
+                        <button class="btn btn-border-white btn-with-logo"><span
+                                class="btn-background-svg btn-svg-white"><img src="./images/stand.png"
+                                    alt="icone stand exposition"></span> RÉSERVER VOTRE STAND</button></a>
+                </div>
+            </div>
+            <img src="./images/tour-de-france-2.jpg" alt="Produit versé dans un verre">
+
+        </div>
+    </div>
+
+
+
+    <!-- LE BLOG - CSS du BLOG dans card-slider.css - JS dans blog-card-slider.js -->
+
+    <div class="container le-blog">
+        <h4>LE BLOG</h4>
+        <h2>une balade gourmande ...</h2>
+        <div class="card-slider">
+            <button onclick="previousCard()" class="slider-btn prev-slide unavailable">
+                <svg class="svg-slider-button" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"> 
+                    <path
+                        d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                </svg>
+            </button>
+            <button onclick="nextCard()" class="slider-btn next-slide">
+                <svg class="svg-slider-button" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"> 
+                    <path
+                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                </svg>
+            </button>
+            <div class="card-slider-content">
+                <div class="card-slider-item">
+                    <img src="./images/blog-1.jpg" alt="Personnes dégustant du vin lors d'un événement de dégustation">
+                    <h5>Comment conserver son vin après
+                        ouverture ?</h5>
+                </div>
+                <div class="card-slider-item">
+                    <img src="./images/blog-2.jpg" alt="Vue aérienne du salon avec des exposants">
+                    <h5>Les salons du vin, des évènements
+                        vins et gastronomie et une équipe
+                        pour les organiser</h5>
+                </div>
+                <div class="card-slider-item">
+                    <img src="./images/blog-3.jpg"
+                        alt="Plusieurs bouteilles de vin alignées lors d'un événement viticole">
+                    <h5>2018, une année placée sous le
+                        signe du renouveau</h5>
+                </div>
+                <div class="card-slider-item">
+                    <img src="./images/blog-4.jpg" alt="Diverses bouteilles de vin de la Confrérie des Vins">
+                    <h5>À la découverte des confréries des
+                        vins</h5>
+                </div>
+                <div class="card-slider-item">
+                    <img src="./images/blog-5.jpg" alt="">
+                    <h5>Recette de vin chaud : une boisson réconfortante pour l'hiver</h5>
+                </div>
+                <div class="card-slider-item">
+                    <img src="./images/blog-6.jpg" alt="">
+                    <h5>Exploration des vignobles : une vue éclatante sous le soleil</h5>
+                </div>
+                <div class="card-slider-item">
+                    <img src="./images/blog-7.jpg" alt="">
+                    <h5>Découvrez les bienfaits du raisin noir</h5>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="center-btn"><button class="btn">TOUTES NOS ACTUALITÉS</button></a>
+    </div>
+    <script src="./js/blog-card-slider.js"></script>
+
+
+
+    <!-- Newsletter -->
+
+    <div class="container newsletter">
+        <img class="image-background" src="./images/newsletter.jpg" alt="Vue de vigne ensoleillé">
+        <div class="newsletter-content">
+            <h4>INSCRIPTION À</h4>
+            <h2>Newsletter</h2>
+            <img class="separation" src="./images/separation.png" alt="vague de separation">
+            <div class="email">
+                <h5>VOTRE ADRESSE E-MAIL</h5>
+                <div class="saisie-button">
+                    <input class="email-input" type="email" id="email" name="email"
+                        placeholder="Ex : lorem.ipsum@dolorsitamet.fr" pattern=".+@example\.com" required />
+                    <input class="btn btn-no-border-left" type="submit" value="S'INSCRIRE" />
+                </div>
+                <div class="checkbox">  
+                    <input type="checkbox" id="checkbox-validation">
+                    <p>Avec votre consentement, votre e-mail est utilisé par la société
+                        des vins de France pour recevoir notre newsletter.<br>
+                        Pour en savoir Plus, consultez notre <a href="#">politique de confidentialité.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Info pratiques -->
+
+    <div class="container info-pratiques">
+        <img class="img-info-pratiques-1" src="./images/info-pratiques-1.jpg" alt="service d'un verre de vin rouge">
+        <div class="txt-img-billet">
+            <div class="txt-img-info-pratiques">
+                <div class="txt-info-pratiques">
+                    <h4>INFOS PRATIQUES</h4>
+                    <h2>Tarifs du salon</h2>
+                    <h5>Plus grand rendez-vous de vins
+                        et de gastronomie en Auvergne,
+                        le salon du vin de Clermont-
+                        Ferrand est de retour pour sa
+                        51ème édition du 21 au 25 février
+                        2024.</h5>
+                </div>
+                <img class="img-info-pratiques-2" src="./images/info-pratiques-2.jpg"   
+                    alt="Caviste présentant ses bouteilles lors d'un salon">                <!-- L'image de droite est positionnée en absolu. -->
+            </div>
+            <div class="billet">
+                <div class="billet-type">
+                    <h5>Billet adulte plein tarif</h5>
+                    <p>Entrée valable pour 1 personne adulte. </p>
+                    <p class="clause">Toute sortie est définitive.</p>
+                </div>
+                <div class="billet-prix">6€</div>
+                <div class="billet-type">
+                    <h5>Billet jeune -18 ans</h5>
+                    <p>Moins de 18 ans accompagné d'un adulte muni crun billet ou
+                        d'une invitation. </p>
+                    <p class="clause">Toute sortie est définitive.</p>
+                </div>
+                <div class="billet-prix">GRATUIT</div>
+                <div class="billet-type billet-dernier">        <!-- J'ai utilisé une classe "billet-dernier" avant de découvrir :last-child, que j'ai ensuite utilisé. -->
+                    <h5>Invitation avec code promo</h5>
+                    <p>Entrée gratuite valable pour 1 personne. </p>
+                    <p class="clause">Toute sortie est définitive.</p>
+                </div>
+                <div class="billet-prix billet-dernier">GRATUIT</div>
+            </div>
+            <a href="#"><button class="btn btn-with-logo"><span class="btn-background-svg btn-svg-white"><svg
+                            class="billetterie-logo" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512"> 
+                            <path
+                                d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z" />
+                        </svg></span> ACCÉDER À LA BILLETTERIE</button></a>
+        </div>
+    </div>
+
+
+
+    <!-- MAP -->
+
+    <div class="container map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5229.026338763558!2d3.1512842820400495!3d45.73983760663574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71d0f3e2669f5%3A0xfdccffc90c15e8c7!2sGrande%20Halle%20d&#39;Auvergne!5e0!3m2!1sfr!2sfr!4v1707482788494!5m2!1sfr!2sfr"
+            allowfullscreen="" loading=async referrerpolicy="no-referrer-when-downgrade"></iframe>  <!-- L'incrustation de la carte est un peu décalée par rapport à la maquette, car sans l'API, je ne pense pas qu'il soit possible d'afficher le point GPS autre part que le centre de l'image. -->
+        <div class="info-localisation">
+            <div class="info-localisation-texte">
+                <h4>INFOS PRATIQUES</h4>
+                <h2>Comment venir ?</h2>
+                <img class="separation" src="./images/separation.png" alt="vague de separation">
+                <a
+                    href="https://www.google.com/maps?ll=45.74153,3.154958&z=14&t=m&hl=fr&gl=FR&mapclient=embed&cid=18288273425801013447">
+                    <h5><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 -19 384 512"> 
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        </svg>
+                        Grand Halle d'Auvergne,<br>
+                        Cournon d'Auvergne</h5>
+                </a>
+                <h5><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"> 
+                        <path
+                            d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z" />
+                    </svg> 04 73 17 19 22</h5>
+                <p>Vendredi 2 février : <b>de 14h à 20h30</b></p> <!-- <b> pour mettre en gras une partie du <p> -->
+                <p>Samedi 3 février : <b>de 10h à 20h30</b></p>
+                <p>Dimanche 4 février : <b>de 10h à 19h30</b></p>
+                <p>Lundi 5 février : <b>de 10h à 16h</b></p>
+                <a href="#"><button class="btn btn-border-hover-white">PLAN DU SALON</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- BOUTON SCROLL TOP EN BAS A DROITE  -->
+
+    
+    <button  class="btn-scroll-top"> <!-- bouton en bas à droite de l'ecran  -->
+        <svg class="svg-scroll-top-button" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"> 
+            <path
+                d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
+        </svg>
+    </button>
+    <script src="./js/auto-scroll-top.js"></script>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container footer-container">
+            <!-- display flex et justify-content: space-between pour avoir footer-left et footer-right à gauche et à droite-->
+            <div class="footer-left">
+                <a href="#" class="footer-link">
+                    MENTIONS LÉGALES
+                </a>
+                <a href="#" class="footer-link">
+                    POLITIQUE DE CONFIDENTIALITÉ
+                </a>
+                <a href="#" class="footer-link">
+                    PARAMÈTRE DES COOKIES
+                </a>
+                <a href="#" class="footer-link">
+                    FAQ
+                </a>
+                <a href="#" class="footer-link">
+                    <!-- J'ai utilisé ":last-child" pour ne pas afficher la bordure droite sur le dernier élément. -->
+                    ESPACE TÉLÉCHARGEMENT
+                </a>
+            </div>
+
+            <div class="footer-right credit">
+                Site web réalisé par Nicolas SURGET.
+                Projet technique Alternance DWWM
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
