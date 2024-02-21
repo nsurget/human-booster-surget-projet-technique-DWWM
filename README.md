@@ -1,4 +1,4 @@
-# Projet technique Dev Web et Web Mobile - Reproduction d'une maquette
+# Projet technique Dev Web et Web Mobile
 
 Ce projet consiste à reproduire fidèlement une [maquette](https://www.figma.com/proto/VKZtad8vfHGDt12wO3vLmq/Human-Booster---Maquette-Salon-du-Vin?type=design&node-id=0-3&scaling=scale-down-width&page-id=0%3A1&hide-ui=1) fournie
  en utilisant HTML, CSS et JavaScript. L'objectif est de respecter la structure des différentes sections, le design et les couleurs autant que possible.
